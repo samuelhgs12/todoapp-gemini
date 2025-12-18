@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { db } from '../database';
+import { db } from '../database/index.js';
 
 // Interface para definir a estrutura de um Todo
 interface Todo {

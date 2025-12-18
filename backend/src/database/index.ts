@@ -1,5 +1,10 @@
 import sqlite3 from 'sqlite3';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+// Resolve __dirname in ES Modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Define o caminho para o arquivo do banco de dados na raiz do backend
 const dbPath = path.resolve(__dirname, '..', '..', 'database.sqlite');

@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
-import todoRoutes from './routes/todo.routes';
-import { createTable } from './database';
+import todoRoutes from './routes/todo.routes.js';
+import { createTable } from './database/index.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
